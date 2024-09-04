@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e7e7e7;
+        }
+        header {
+            background-color: #131a22;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: none;
+            margin-right: 10px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #febd69;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .banner {
+    background-image: url('https://feeds.abplive.com/onecms/images/uploaded-images/2021/10/02/4c0d783d7832682e9915c1497c86a6fd_original.JPG');
+    background-size: 88% auto;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 400px;
+}
+
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+        }
+        .category {
+            background-color: #f3f3f3;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .product .name {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product .price {
+            color: #b12704;
+            font-size: 20px;
+        }
+        footer {
+            background-color: #131a22;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlUhJcxWMb_xol16a26AzMzly_Anf71aSXYw&s" alt="Amazon Logo">
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for products, brands, and more">
+        <button>Search</button>
+    </div>
+    <nav>
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+    </nav>
+</header>
+<h1>  &emsp;  Welcome to Amazon</h1>
+<div class="banner">
+
+    
+</div>
+
+<section class="categories">
+    <div class="category">
+        <img src="https://www.shift4shop.com/2015/images/sell-online/electronics/selling-charge-up.jpg" alt="Electronics" style="width: 100px;">
+        <h3>Electronics</h3>
+    </div>
+    <div class="category">
+        <img src="https://theglamandglitter.com/wp-content/uploads/2024/01/SS24-Trends.jpg" alt="Fashion" style="width: 100px;">
+        <h3>Fashion</h3>
+    </div>
+    <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqQn3BJMounDv2j60qC5kX0wAJjRDrgwIwxw&s" alt="Home & Kitchen" style="width: 100px;">
+        <h3>Home & Kitchen</h3>
+    </div>
+    <div class="category">
+        <img src="https://benthambooks.com/slider-books/9789815179361.png" alt="Books" style="width: 100px;">
+        <h3>Books</h3>
+    </div>
+</section>
+
+<section class="products">
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKH0E_-P_uuFTUrJWBNz2mVsX-65I4uhDcDA&s" alt="Product 1">
+        <div class="name">Product Name 1</div>
+        <div class="price">Rs.5000</div>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://threadcounts.in/cdn/shop/files/3_4_4cbd7dca-ca62-4451-ae5b-e5c692de36ff.jpg?v=1713567147" height="300" width="200" alt="Product 2">
+        <div class="name">Product Name 2</div>
+        <div class="price">Rs.6000</div>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKVn1DrU9CC9T58T0qpgEAUU8tKrp_61OBdg&s" alt="Product 3">
+        <div class="name">Product Name 3</div>
+        <div class="price">Rs.4000</div>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://static01.nyt.com/images/2024/01/06/books/06kristin-hannah-cover/06kristin-hannah-cover-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Product 4">
+        <div class="name">Product Name 4</div>
+        <div class="price">Rs.700</div>
+        <button>Add to Cart</button>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; All rights reserved for Amazon.</p>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Use</a>
+</footer>
+
+</body>
+</html>
